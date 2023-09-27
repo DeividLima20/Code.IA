@@ -1,0 +1,256 @@
+/*
+    @DEIVIDX_OFC
+*/
+
+*{margin: 0;padding: 0;box-sizing: border-box;font-family: sans-serif;}
+html,body{
+    height: 100%;
+}
+.container{
+    max-width: 1280px;
+    padding: 0 2%;
+    margin: 0 auto;
+}
+
+/*Estilizando meu header(Menu)*/
+header{
+    width: 100%;
+    padding: 20px 0;
+    background-color:#0f259e;
+}
+div.logo{
+    cursor: default;
+    color: white;
+    padding: 0 2%;
+    font-size: 25px;
+}
+/*Estilizando meu menu desktop*/
+.menu-desktop{
+    display: block;
+    padding: 0 2%;
+    float: right;
+}
+.menu-desktop ul{
+    list-style-type: none;
+    
+}
+.menu-desktop ul li{
+    padding-right: 50px;
+    position: relative;
+    top: -24px;
+    display: inline-block;
+}
+.menu-desktop a{
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(175, 181, 207);
+}
+.menu-desktop a:hover{
+    text-decoration: underline;
+}
+/*Estilizando meu menu-mobile*/
+.menu-mobile{
+    display: none;
+    padding: 0 2%;
+    position: relative;
+    top: -24px;
+}
+div.icon-menu-mobile{
+    font-size: 24px;
+    cursor: pointer;
+    float: right;
+}
+div.icon-menu-mobile i{
+    color: white;
+}
+.menu-mobile ul{
+    display: none;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 45px;
+    left: 0;
+    list-style-type: none;
+    background-color: #ccc;
+
+}
+
+.menu-mobile ul li{
+    border-bottom: 1px solid black;
+    padding: 15px 0;
+} 
+.menu-mobile a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #6c32d1;
+}
+
+.menu-mobile ul li:hover{
+    transition: 1s;
+    background-color: rgb(185, 185, 185);
+}
+
+/*Estilizando meu Home*/
+
+section.home{
+    
+    background-image: url(imagens/fundoIA.jpeg);
+    background-size: cover;
+    padding: 0 2%;
+    max-width: 100%;
+    min-height: 714px;
+}
+.conteudo-home{
+    z-index: 1;
+    width: 80%;
+    padding: 300px 2%  100px 2%;
+}
+.conteudo-home h1{
+    width: 100%;
+    font-size: 40px;
+    font-family: sans-serif;
+    color: white;
+}
+.conteudo-home h1 span{
+    font-weight: normal;
+}
+.conteudo-home p{
+    color: rgb(185, 185, 185);
+    max-width: 800px;
+    font-size: 25px;
+}
+
+/*Estilizando minha pagina sobre*/
+section.sobre{
+    width: 100%;
+    min-height: 714px;
+    background-image: url(imagens/fundosobreIA.jpg);
+    background-size: cover;
+}
+section.sobre .container{
+    padding: 0;
+}
+.conteudo-sobre{
+    text-align: center;
+    max-width: 100%;
+    padding: 100px 2% 20px 2%;
+}
+.conteudo-sobre h1{
+    text-align: center;
+    color: white;
+    font-size: 37px;
+}
+.conteudo-sobre  p{
+    padding-top: 30px;
+    color: rgba(255, 255, 255, 0.692);
+    font-size: 19px;
+    text-align: justify;
+}
+
+/*Estilizando meu contato*/
+section.contato{
+    width: 100%;
+    min-height: 714px;
+    padding: 100px 2% 0 2% ;
+    text-align: center;
+    background-color: rgb(11, 30, 138);
+}
+section.contato .conteudo-contato{
+   padding: 0 2%;
+   display: block;
+   width: 100%;
+  
+   
+}
+.conteudo-contato h1{
+    color: white;
+    font-size: 33px;
+}
+.input-contato{
+    padding: 30px 2%;
+    display: inline-block;
+    text-align: left;
+}
+.input-contato label{
+    width: 100%;
+    color: white;
+    font-size: 17px;
+}
+div.inputs{
+    width: 100%;
+    padding: 20px 2% 0 2%;
+
+}
+.text{
+    background-color: rgba(255, 255, 255, 0.164);
+    border: 0;
+    border-radius: 10px;
+    width: 500px;
+    height: 45px;
+    text-align: left;
+    padding: 7px;
+    display: block;
+}
+.inputs textarea{
+    border: 0;
+    border-radius: 10px;
+    height: 100px;
+    resize: vertical;
+}
+.inputs input[type=submit]{
+    margin-top: 10px;
+    width: 130px;
+    height: 30px;
+    border: 0;
+    border-radius: 7px;
+    background-color: #827991;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px){
+    .menu-desktop{
+        display: none;
+    }
+    .menu-mobile{
+        display: block;
+    }
+    section.home{
+        text-align: center;
+    }
+    .conteudo-home{
+        text-align: left;
+        padding: 200px 2%;
+    }
+    
+}
+@media screen and (max-width: 570px){
+    .text{
+        width: 300px;
+    }
+    section.contato{
+        padding-left: 0;
+    }
+    
+}
+@media screen and (max-width: 331px){
+    .text{
+        width: 200px;
+    }
+    section.contato .input-contato{
+        position: relative;
+        left: -15px;
+        padding: 0;
+    }
+    
+}
+
+/*
+    @DEIVIDX_OFC
+*/
